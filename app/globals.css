@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --radius: 0.625em;
+  --color-background: #faf7f2;
+  --color-foreground: #4a3f3d;
+  --color-muted: #8a7b76;
+  --color-accent: #e88b9a;
+  --color-accent-light: #f6c7cf;
+  --color-secondary: #f2e6d8;
+  --color-border: #e9dfd6;
+  --color-primary: #f6c7cf;
+  --color-primary-hover: #f6b5bf;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-accent/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
